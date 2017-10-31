@@ -1,0 +1,32 @@
+# project
+
+environment:
+  development:
+    sourceMap: true
+
+  production:
+    sourceMap: false
+
+server:
+  port: ~
+  https: false
+
+onOff:
+  static: false
+  mock: true
+  proxy: false
+
+static:
+  dirname: 'static'
+  virtualPath: '/static'
+
+mock:
+  context: /api
+  callback: callback
+
+proxy:
+  context: /api
+  options:
+    target: http://127.0.0.1:3824
+    changeOrigin: true
+    secure: false
