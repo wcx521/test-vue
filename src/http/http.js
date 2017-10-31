@@ -1,8 +1,12 @@
 import request from '@/common/request'
 
 
-export function getApiXxx () {
+export function apiXxx () {
   return request('get', '/api/xxx')
+}
+
+export function apiGetLog () {
+  return request('get', '/api/getLog')
 }
 
 /*

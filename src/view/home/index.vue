@@ -20,7 +20,7 @@ export default {
     }
   },
   mounted: function() {
-  	this.$http.getApiXxx().then(res => {
+  	this.$http.apiXxx().then(res => {
   		this.arr = res.data
   	})
   }
